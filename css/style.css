@@ -1,0 +1,880 @@
+:root {
+  --bluesoft: #f9fbfc;
+  /* --blue: #3a38ff; */
+  --blue: #2447f9;
+  --purplesoft: #e5e4ff;
+  --navy: #101041;
+  --darkgrey: #949293;
+  --darkgrey2: #e7ebed;
+  --grey: #dfe2e7;
+  /* --purple: #6261d8;
+  --green: #316762; */
+  --white: #ffffff;
+  --fwbold: 700;
+  --fwextrabold: 800;
+  --fwsemibold: 600;
+  --fwmedium: 500;
+  --fwreguler: 400;
+  --fwlight: 300;
+}
+
+.mt-70 {
+  margin-top: 70px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--blue);
+}
+
+.navbar-nav .nav-item a:hover {
+  color: var(--blue);
+  font-weight: var(--fwsemibold);
+}
+
+.navbar-nav .nav-item a {
+  color: var(--navy);
+}
+
+.navbar-nav .nav-item {
+  font-weight: var(--fwreguler);
+}
+
+.navbar-brand {
+  font-weight: var(--fwbold);
+  font-size: 28px;
+  color: var(--blue);
+}
+
+.navbar {
+  --bs-navbar-padding-y: 0;
+}
+
+.fjarmdhn-navbar {
+  background: var(--white);
+}
+
+.small-copy {
+  font-size: 28px;
+  color: var(--blue);
+  font-weight: var(--fwbold);
+}
+
+.primary-copy {
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: var(--fwreguler);
+  line-height: 28px;
+  color: var(--darkgrey);
+  margin: 0;
+}
+
+.big-header {
+  font-weight: var(--fwextrabold);
+  color: var(--navy);
+  font-size: 54px;
+  margin: 0;
+  line-height: 60px;
+}
+
+.medium-header {
+  font-weight: var(--fwbold);
+  color: var(--navy);
+  font-size: 28px;
+  margin: 0;
+}
+
+.header .social-icon ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start; /* Mengatur posisi ikon di sisi kiri */
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 50px;
+}
+
+.header .social-icon li {
+  width: 50px;
+  height: 50px;
+  background-color: var(--blue);
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .social-icon li:hover {
+  background-color: var(--navy);
+}
+
+.header .social-icon a {
+  color: var(--white);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header .social-icon a:hover {
+  color: var(--bg);
+}
+
+.header .social-icon i {
+  font-size: 24px;
+  color: #fff;
+}
+
+.about h1.medium-header {
+  margin-top: 0;
+}
+
+.about p.small-copy {
+  margin-bottom: 0;
+}
+
+.card-brand {
+  width: 227px;
+  height: 110px;
+  border-radius: 16px;
+  background: var(--darkgrey2);
+  text-align: center;
+}
+
+.card-brand .logo {
+  height: 50px;
+  margin-top: 30px;
+}
+
+.carousel-wrapper {
+  display: flex;
+  height: 110px;
+  animation: moveSlideToLeft 10s linear infinite;
+}
+
+.carousel {
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  height: 110px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+@keyframes moveSlideToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes moveSlideToRight {
+  0% {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.carousel-wrapper-left {
+  display: flex;
+  height: 110px;
+  animation: moveSlideToRight 10s linear infinite;
+}
+
+.carousel-left {
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  height: 110px;
+  overflow: hidden;
+}
+
+.portfolio .card {
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.portfolio .card.img {
+  padding: 10px;
+}
+
+.portfolio .card-title {
+  font-weight: var(--fwbold);
+  color: var(--navy);
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.portfolio .card-text {
+  font-weight: var(--fwreguler);
+  line-height: 28px;
+  color: var(--darkgrey);
+  margin-top: 10px;
+}
+
+.portfolio .text-button {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+.portfolio .text-button:hover {
+  text-decoration: underline;
+  color: var(--navy);
+}
+
+.contact .form-control {
+  border-radius: 50px;
+  border: 0;
+  background: var(--darkgrey2);
+  padding: 12px 20px 12px 20px;
+}
+
+.contact textarea.form-control {
+  border-radius: 16px;
+}
+
+.contact .form-select {
+  border-radius: 50px;
+  border: 0;
+  background: var(--darkgrey2);
+  padding: 12px 20px 12px 20px;
+  background-image: url("../images/icon_dropdown.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 24px;
+}
+
+.contact .btn-primary {
+  padding: 12px 20px 12px 20px;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: var(--fwsemibold);
+  border-radius: 50px;
+  border: 0;
+}
+
+.contact .btn-primary:hover {
+  background: var(--navy);
+  color: var(--white);
+}
+
+.footer {
+  margin-bottom: 50px;
+}
+
+.footer hr {
+  border-color: var(--blue);
+}
+
+.footer .social-icon ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .social-icon li {
+  width: 50px;
+  height: 50px;
+  background-color: var(--blue);
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .social-icon li:hover {
+  background-color: var(--navy);
+}
+
+.footer .social-icon a {
+  color: var(--white);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer .social-icon i {
+  font-size: 24px;
+  color: var(--white);
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Display the list items horizontally */
+  justify-content: center; /* Center the items horizontally within the container */
+}
+
+.footer-nav .nav-item {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+  font-weight: var(--fwreguler);
+}
+
+/* Remove underlines from links */
+.footer-nav .nav-link {
+  text-decoration: none;
+}
+
+/* Style for links */
+.footer-nav .nav-link {
+  color: var(--navy);
+  font-weight: var(--fwreguler);
+}
+
+.footer-nav .nav-link:hover {
+  color: var(--blue);
+  font-weight: var(--fwsemibold);
+}
+
+.footer-nav .nav-link.active {
+  color: var(--blue);
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background: var(--white);
+  }
+
+  .nav-item .nav-link {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .header,
+  .about,
+  .portfolio,
+  .contact {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .header,
+  .about,
+  .skills,
+  .portfolio,
+  .contact,
+  .footer {
+    padding-top: 50px;
+  }
+
+  .about {
+    padding-bottom: 60px;
+  }
+
+  .skills {
+    padding-bottom: 300px;
+  }
+
+  .portfolio .row.justify-content-between {
+    padding-top: 120px;
+  }
+
+  .about .row.justify-content-between {
+    padding-top: 120px;
+  }
+
+  .skills .carousel {
+    margin-top: 120px;
+  }
+
+  .contact .row.form {
+    margin-top: 50px;
+  }
+}
+
+/* Tampilan untuk perangkat dengan lebar layar lebih kecil dari 992px */
+@media (max-width: 991px) {
+  .header img,
+  .about img {
+    max-width: 50%;
+    max-height: auto;
+    display: block;
+    margin: 0 auto; /* Ini akan memastikan gambar tetap di tengah horisontal */
+  }
+
+  .about,
+  .skills,
+  .portfolio,
+  .contact {
+    padding-top: 20px;
+  }
+}
+
+/* Tampilan untuk perangkat dengan lebar layar lebih kecil dari 576px (ponsel) xs */
+@media (max-width: 575px) {
+  .navbar {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+  }
+
+  .big-header {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .medium-header {
+    font-size: 24px;
+  }
+
+  .small-copy {
+    font-size: 24px;
+  }
+
+  .header {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .header img {
+    margin-top: 20px;
+  }
+
+  .header .small-copy {
+    margin-bottom: 0px; /* Atur margin bawah ke nilai yang lebih kecil */
+  }
+
+  .header .big-header {
+    margin-top: 0px; /* Atur margin atas ke nilai yang lebih kecil */
+  }
+
+  .header .text-center-mobile {
+    text-align: left; /* Mengatur teks ke tengah */
+    align-self: center; /* Mengatur konten ke tengah */
+  }
+
+  .header .social-icon {
+    text-align: center;
+    align-self: center;
+  }
+
+  .header .social-icon ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .header .social-icon li {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header .social-icon i {
+    font-size: 21px;
+  }
+
+  .about {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .about img {
+    margin-top: 20px;
+  }
+
+  .about .copywriting {
+    text-align: left; /* Mengatur teks ke tengah */
+    align-self: center; /* Mengatur konten ke tengah */
+    margin-top: 20px;
+  }
+
+  .skills {
+    margin-bottom: 20px;
+  }
+
+  .skills .medium-header {
+    margin-bottom: 20px;
+  }
+
+  .portfolio {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .portfolio .medium-header {
+    margin-top: 20px;
+  }
+
+  .portfolio .card-title,
+  .portfolio .card-text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .portfolio .text-button {
+    font-size: 16px;
+  }
+
+  .contact {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .contact .medium-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .contact .form-control,
+  .contact textarea.form-control {
+    padding: 10px 20px;
+  }
+
+  .contact .form-select {
+    background-position: right 10px center;
+    background-size: 20px;
+  }
+
+  .footer-nav {
+    margin: 0;
+  }
+
+  .footer .social-icon li {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer .social-icon i {
+    font-size: 21px;
+  }
+
+  .footer p .pt-4 .pb-2 {
+    padding-top: 0;
+  }
+}
+
+/* Tampilan untuk perangkat dengan lebar layar antara 576px dan 768 (tablet) sm */
+@media (min-width: 576px) and (max-width: 767px) {
+  .navbar {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+  }
+
+  .big-header {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .medium-header {
+    font-size: 24px;
+  }
+
+  .small-copy {
+    font-size: 24px;
+  }
+
+  .header {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .header img {
+    margin-top: 20px;
+  }
+
+  .header .small-copy {
+    margin-bottom: 0px; /* Atur margin bawah ke nilai yang lebih kecil */
+  }
+
+  .header .big-header {
+    margin-top: 0px; /* Atur margin atas ke nilai yang lebih kecil */
+  }
+
+  .header .text-center-mobile {
+    text-align: left; /* Mengatur teks ke tengah */
+    align-self: center; /* Mengatur konten ke tengah */
+  }
+
+  .header .social-icon {
+    text-align: center;
+    align-self: center;
+  }
+
+  .header .social-icon ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .header .social-icon li {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header .social-icon i {
+    font-size: 21px;
+  }
+
+  .about {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .about img {
+    margin-top: 20px;
+  }
+
+  .about .copywriting {
+    text-align: left; /* Mengatur teks ke tengah */
+    align-self: center; /* Mengatur konten ke tengah */
+    margin-top: 20px;
+  }
+
+  .skills {
+    margin-bottom: 20px;
+  }
+
+  .skills .medium-header {
+    margin-bottom: 20px;
+  }
+
+  .portfolio {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .portfolio .medium-header {
+    margin-top: 20px;
+  }
+
+  .portfolio .card-title,
+  .portfolio .card-text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .portfolio .text-button {
+    font-size: 16px;
+  }
+
+  .contact {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .contact .medium-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .contact .form-control,
+  .contact textarea.form-control {
+    padding: 10px 20px;
+  }
+
+  .contact .form-select {
+    background-position: right 10px center;
+    background-size: 20px;
+  }
+
+  .footer-nav {
+    margin: 0;
+  }
+
+  .footer .social-icon li {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer .social-icon i {
+    font-size: 21px;
+  }
+
+  .footer p .pt-4 .pb-2 {
+    padding-top: 0;
+  }
+}
+
+/* Tampilan untuk perangkat dengan lebar layar antara 768 dan 991 (tablet) md */
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+  }
+
+  .big-header {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .medium-header {
+    font-size: 24px;
+  }
+
+  .small-copy {
+    font-size: 24px;
+  }
+
+  .header {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .header img {
+    margin-top: 20px;
+  }
+
+  .header .small-copy {
+    margin-bottom: 0px; /* Atur margin bawah ke nilai yang lebih kecil */
+  }
+
+  .header .big-header {
+    margin-top: 0px; /* Atur margin atas ke nilai yang lebih kecil */
+  }
+
+  .header .text-center-mobile {
+    text-align: left; /* Mengatur teks ke tengah */
+    align-self: center; /* Mengatur konten ke tengah */
+  }
+
+  .header .social-icon {
+    text-align: center;
+    align-self: center;
+  }
+
+  .header .social-icon ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .header .social-icon li {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header .social-icon i {
+    font-size: 21px;
+  }
+
+  .about {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .about img {
+    margin-top: 20px;
+  }
+
+  .about .copywriting {
+    text-align: left; /* Mengatur teks ke tengah */
+    align-self: center; /* Mengatur konten ke tengah */
+    margin-top: 20px;
+  }
+
+  .skills {
+    margin-bottom: 20px;
+  }
+
+  .skills .medium-header {
+    margin-bottom: 20px;
+  }
+
+  .portfolio {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .portfolio .medium-header {
+    margin-top: 20px;
+  }
+
+  .portfolio .card-title,
+  .portfolio .card-text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .portfolio .text-button {
+    font-size: 16px;
+  }
+
+  .contact {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .contact .medium-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .contact .form-control,
+  .contact textarea.form-control {
+    padding: 10px 20px;
+  }
+
+  .contact .form-select {
+    background-position: right 10px center;
+    background-size: 20px;
+  }
+
+  .footer-nav {
+    margin: 0;
+  }
+
+  .footer .social-icon li {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer .social-icon i {
+    font-size: 21px;
+  }
+
+  .footer p .pt-4 .pb-2 {
+    padding-top: 0;
+  }
+}
