@@ -50,6 +50,36 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.btn-primary {
+  padding: 12px 20px 12px 20px;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: var(--fwsemibold);
+  border-radius: 50px;
+  border: 0;
+}
+
+.btn-primary:hover {
+  background: var(--navy);
+  color: var(--white);
+}
+
+.btn-secondary {
+  padding: 12px 20px 12px 20px;
+  background: var(--grey);
+  color: var(--navy);
+  font-size: 16px;
+  font-weight: var(--fwmedium);
+  border-radius: 50px;
+  border: 0;
+}
+
+.btn-secondary:hover {
+  background: var(--navy);
+  color: var(--white) !important;
+}
+
 .navbar-nav .nav-link.active {
   color: var(--blue);
   font-weight: var(--fwsemibold);
@@ -173,13 +203,13 @@ body {
   margin-top: 30px;
 }
 
-.carousel-wrapper {
+.skills .carousel-wrapper {
   display: flex;
   height: 110px;
   animation: moveSlideToLeft 10s linear infinite;
 }
 
-.carousel {
+.skills .carousel {
   justify-content: flex-end;
   display: flex;
   flex-direction: row;
@@ -206,13 +236,13 @@ body {
   }
 }
 
-.carousel-wrapper-left {
+.skills .carousel-wrapper-left {
   display: flex;
   height: 110px;
   animation: moveSlideToRight 10s linear infinite;
 }
 
-.carousel-left {
+.skills .carousel-left {
   justify-content: flex-end;
   display: flex;
   flex-direction: row;

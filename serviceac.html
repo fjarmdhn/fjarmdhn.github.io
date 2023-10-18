@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fjarmdhn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" data-aos="fade-down" data-aos-delay="100">
+      <div class="container fjarmdhn-navbar">
+        <a class="navbar-brand" href="/#header"> Fjarmdhn </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/#header">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="row text-center">
+          <h3 class="medium-header" data-aos="fade-up" data-aos-delay="100">Portfolio</h3>
+        </div>
+        <div class="row justify-content-between">
+          <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <div id="carouselExampleInterval" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                  <img src="images/serviceac/service-ac.png" class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="h5">Home Page</h5>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="images/serviceac/login.png" class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="h5">Login Page</h5>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="images/serviceac/register.png" class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="h5">Register Page</h5>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="images/serviceac/listservice.png" class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="h5">List Service Page</h5>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="images/serviceac/edit profile.png" class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="h5">Edit Profile Page</h5>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title" data-aos="fade-up" data-aos-delay="100">Website Sistem Order Service AC</h5>
+              <p class="card-text" data-aos="fade-up" data-aos-delay="200">
+                I am proud to present the AC service order system project that I have developed using Laravel. This project is the result of my commitment to creating practical and efficient technology solutions for handling AC orders and
+                services. This system allows customers to easily order AC repair or maintenance services. They can access the website, determine the type of service they need, and schedule a service time that suits their needs. On the other
+                hand, AC service providers have access to the system to receive, manage and complete orders. They can quickly respond to customer requests and schedule visits according to their schedule. The system also provides an order
+                tracking feature, so customers can monitor the status of their services. Additionally, we have implemented strong data security to protect customer information and maintain data confidentiality. This project is a clear
+                example of how technology can simplify interactions between service providers and customers. This project was the result of a successful collaboration between the three of us, demonstrating how important teamwork is in the
+                development of complex technology solutions. We are committed to continuing to improve this project and make it a better solution for AC service providers. I am very proud of the results of the hard work in developing this
+                project and continue to be committed to providing quality technology solutions in future projects.
+              </p>
+              <h6 class="text-button" style="text-decoration: none" data-aos="fade-up" data-aos-delay="300">Technology Used : PHP (Laravel) , Bootstrap, MySQL</h6>
+              <p class="card-text" style="color: #101041" data-aos="fade-up" data-aos-delay="400">For further information regarding this website page, you can contact me</p>
+              <a class="btn btn-primary" href="/" data-aos="fade-up" data-aos-delay="500">Back To Page</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <hr data-aos="zoom-in" data-aos-delay="100" />
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center" data-aos="zoom-in">
+            <div class="social-icon">
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <a href="https://www.instagram.com/fjarmdhn__/" target="_blank"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li class="ms-2" data-aos="fade-up" data-aos-delay="200">
+                  <a href="https://github.com/fjarmdhn" target="_blank"><i class="bi bi-github"></i></a>
+                </li>
+                <li class="ms-2" data-aos="fade-up" data-aos-delay="300">
+                  <a href="https://www.tiktok.com/@fjarmdhn__" target="_blank"><i class="bi bi-tiktok"></i></a>
+                </li>
+                <li class="ms-2" data-aos="fade-up" data-aos-delay="400">
+                  <a href="https://www.linkedin.com/in/fjarmdhn/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+            <nav class="footer-nav text-center">
+              <ul>
+                <li class="nav-item" data-aos="fade-up" data-aos-delay="500">
+                  <a class="nav-link" href="/#header">Home</a>
+                </li>
+
+                <li class="nav-item" data-aos="fade-up" data-aos-delay="500">
+                  <a class="nav-link" href="/#about">About</a>
+                </li>
+                <li class="nav-item" data-aos="fade-up" data-aos-delay="700">
+                  <a class="nav-link" href="/#skills">Skills</a>
+                </li>
+                <li class="nav-item" data-aos="fade-up" data-aos-delay="800">
+                  <a class="nav-link active" href="/#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item" data-aos="fade-up" data-aos-delay="900">
+                  <a class="nav-link" href="/#contact">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <p class="pt-4 pb-2" data-aos="fade-up" data-aos-delay="1000">2023 Copyright Fjarmdhn. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
