@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#header">Home</a>
+              <a class="nav-link" href="#header">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -295,7 +295,7 @@
             <nav class="footer-nav text-center">
               <ul>
                 <li class="nav-item" data-aos="fade-up" data-aos-delay="500">
-                  <a class="nav-link active" href="#header">Home</a>
+                  <a class="nav-link" href="#header">Home</a>
                 </li>
 
                 <li class="nav-item" data-aos="fade-up" data-aos-delay="500">
@@ -323,7 +323,7 @@
   <script>
     AOS.init();
   </script>
-  <script>
+  <!-- <script>
     // Smooth scroll to section when a navigation link is clicked
     document.querySelectorAll("a.nav-link").forEach((anchor) => {
       anchor.addEventListener("click", function (e) {
@@ -334,6 +334,42 @@
 
         if (targetSection) {
           targetSection.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
+  </script> -->
+
+  <script>
+    // Fungsi untuk menangani klik pada item navbar
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        // Mengambil target dari anchor
+        const targetId = this.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        // Menggulir halaman ke elemen target dengan efek smooth
+        if (targetElement) {
+          window.scrollTo({
+            behavior: "smooth",
+            top: targetElement.offsetTop,
+          });
+
+          // Tambahkan kelas "active" ke tautan yang diklik di navbar header
+          document.querySelectorAll(".navbar a.nav-link").forEach((navLink) => {
+            navLink.classList.remove("active");
+          });
+          this.classList.add("active");
+
+          // Tambahkan kelas "active" ke tautan yang diklik di navbar footer
+          document.querySelectorAll(".footer a.nav-link").forEach((navLink) => {
+            navLink.classList.remove("active");
+          });
+          const footerLink = document.querySelector(`.footer a[href="#${targetId}"]`);
+          if (footerLink) {
+            footerLink.classList.add("active");
+          }
         }
       });
     });

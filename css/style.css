@@ -52,6 +52,7 @@ body {
 
 .navbar-nav .nav-link.active {
   color: var(--blue);
+  font-weight: var(--fwsemibold);
 }
 
 .navbar-nav .nav-item a:hover {
@@ -366,6 +367,7 @@ body {
 
 .footer-nav .nav-link.active {
   color: var(--blue);
+  font-weight: var(--fwsemibold);
 }
 
 @media (min-width: 992px) {
