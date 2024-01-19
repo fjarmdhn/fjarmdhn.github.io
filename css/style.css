@@ -918,3 +918,33 @@ body {
     padding-top: 0;
   }
 }
+
+@media (max-width: 576px) {
+  .card-brand {
+    width: 180px;
+    height: 90px;
+    border-radius: 12px;
+  }
+
+  .card-brand .logo {
+    height: 40px;
+    margin-top: 25px;
+  }
+
+  .skills .carousel-wrapper {
+    height: 90px;
+  }
+
+  .skills .carousel {
+    height: 90px;
+    margin-bottom: 20px;
+  }
+
+  .skills .carousel-wrapper-left {
+    height: 90px;
+  }
+
+  .skills .carousel-left {
+    height: 90px;
+  }
+}
