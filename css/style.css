@@ -50,6 +50,52 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.up {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 999;
+}
+
+.up ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.up li {
+  width: 50px;
+  height: 50px;
+  background-color: var(--blue);
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.up li:hover {
+  background-color: var(--navy);
+}
+
+.up a {
+  color: var(--white);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.up a:hover {
+  color: var(--bg);
+}
+
+.up i {
+  font-size: 24px;
+  color: #fff;
+}
+
 .btn-primary {
   padding: 12px 20px 12px 20px;
   background: var(--blue);
@@ -461,6 +507,20 @@ body {
 
 /* Tampilan untuk perangkat dengan lebar layar lebih kecil dari 992px */
 @media (max-width: 992px) {
+  .up {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .up li {
+    width: 40px;
+    height: 40px;
+  }
+
+  .up i {
+    font-size: 21px;
+  }
+
   .header img,
   .about img {
     max-width: 50%;
