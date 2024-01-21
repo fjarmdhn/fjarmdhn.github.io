@@ -42,14 +42,6 @@
       </div>
     </nav>
 
-    <div class="up">
-      <ul>
-        <li data-aos="fade-up" data-aos-delay="100">
-          <a href="#" id="scrollToTop"><i class="bi bi-arrow-up"></i></a>
-        </li>
-      </ul>
-    </div>
-
     <section class="header" id="header">
       <div class="container">
         <div class="row justify-content-between">
@@ -84,6 +76,13 @@
         </div>
       </div>
     </section>
+    <div class="up">
+      <ul>
+        <li data-aos="fade-up" data-aos-delay="100">
+          <a href="#" id="scrollToTop"><i class="bi bi-arrow-up"></i></a>
+        </li>
+      </ul>
+    </div>
 
     <section class="about" id="about">
       <div class="container">
@@ -397,6 +396,102 @@
   <script>
     AOS.init();
   </script>
-  <script src="/js/scroll.js"></script>
-  <script src="/js/nav.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const scrollToTopBtn = document.getElementById("scrollToTop");
+
+      // Add a click event listener to the button
+      scrollToTopBtn.addEventListener("click", function (e) {
+        e.preventDefault(); // Prevent the default behavior of the anchor link
+
+        // Use smooth scrolling when clicking the button
+        document.body.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+
+        document.documentElement.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    });
+
+    // Fungsi untuk menangani klik pada tautan navbar
+    document.querySelectorAll("nav a.nav-link").forEach((navLink) => {
+      navLink.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        // Menghapus kelas "active" dari semua tautan navbar
+        document.querySelectorAll("nav a.nav-link").forEach((link) => {
+          link.classList.remove("active");
+        });
+
+        // Menghapus kelas "active" dari semua tautan footer
+        document.querySelectorAll(".footer a.nav-link").forEach((link) => {
+          link.classList.remove("active");
+        });
+
+        // Mengambil target dari tautan yang diklik
+        const targetId = this.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        // Menggulir halaman ke elemen target dengan efek smooth
+        if (targetElement) {
+          window.scrollTo({
+            behavior: "smooth",
+            top: targetElement.offsetTop,
+          });
+
+          // Tambahkan kelas "active" ke tautan yang diklik
+          this.classList.add("active");
+
+          // Tambahkan kelas "active" ke tautan footer yang sesuai
+          const footerLink = document.querySelector('.footer a.nav-link[href="#' + targetId + '"]');
+          if (footerLink) {
+            footerLink.classList.add("active");
+          }
+        }
+      });
+    });
+
+    // Fungsi untuk menangani klik pada tautan footer
+    document.querySelectorAll(".footer a.nav-link").forEach((footerLink) => {
+      footerLink.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        // Menghapus kelas "active" dari semua tautan navbar
+        document.querySelectorAll("nav a.nav-link").forEach((link) => {
+          link.classList.remove("active");
+        });
+
+        // Menghapus kelas "active" dari semua tautan footer
+        document.querySelectorAll(".footer a.nav-link").forEach((link) => {
+          link.classList.remove("active");
+        });
+
+        // Mengambil target dari tautan yang diklik
+        const targetId = this.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        // Menggulir halaman ke elemen target dengan efek smooth
+        if (targetElement) {
+          window.scrollTo({
+            behavior: "smooth",
+            top: targetElement.offsetTop,
+          });
+
+          // Tambahkan kelas "active" ke tautan yang diklik
+          this.classList.add("active");
+
+          // Tambahkan kelas "active" ke tautan navbar yang sesuai
+          const navLink = document.querySelector('nav a.nav-link[href="#' + targetId + '"]');
+          if (navLink) {
+            navLink.classList.add("active");
+          }
+        }
+      });
+    });
+  </script>
 </html>
